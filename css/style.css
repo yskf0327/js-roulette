@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+:root {
+	--background-color: #363159;
+	--neon-color-pink-1: #D63BD9;
+	--neon-color-pink-2: #FF2000;
+	--neon-color-pink-3: #D700B6;
+	--neon-color-pink-4: #FFA7FF;
+	--neon-color-orange-1: #ffa500;
+	--neon-color-orange-2: #ff0000;
+	--neon-color-orange-3: #ff8d00;
+	--neon-color-orange-4: #fff6a9;
+	--accent-color: #05C7F2;
+	--font-family: 'Oooh Baby',
+		cursive;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	background-color: var(--background-color);
+	color: var(--main-color);
+	background: #112 url(../img/bg_roulette-wall.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.container {
+	width: clamp(350px, 80vw, 900px);
+	margin-inline: auto;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.roulette {
+	font-size: 45vh;
+	text-shadow: 0 0 5px var(--neon-color-pink-1), 0 0 15px var(--neon-color-pink-1), 0 0 20px var(--neon-color-pink-1), 0 0 40px var(--neon-color-pink-1), 0 0 60px var(--neon-color-pink-3), 0 0 10px var(--neon-color-pink-2), 0 0 98px var(--neon-color-pink-3);
+	color: var(--neon-color-pink-4);
+	font-family: var(--font-family);
+}
+
+.btn {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 10vh;
+	color: var(--accent-color);
+	text-shadow: 0 0 5px var(--neon-color-orange-1), 0 0 15px var(--neon-color-orange-1), 0 0 20px var(--neon-color-orange-1), 0 0 40px var(--neon-color-orange-1), 0 0 60px var(--neon-color-orange-2), 0 0 10px var(--neon-color-orange-3), 0 0 98px var(--neon-color-orange-2);
+	color: var(--neon-color-orange-4);
+	font-family: var(--font-family);
+}
